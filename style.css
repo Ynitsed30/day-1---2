@@ -1,0 +1,268 @@
+body{
+    
+    color: black;
+
+}
+#name{
+  float: left;
+  margin-top: 1px;
+  
+}
+#pic{ 
+    border-radius: 50%;
+    padding: 15px;
+    width: 70px;
+    float: left;
+    margin-right: 10px;  
+    
+}
+#tweet-pic{
+  width:60px; 
+  height: 60px; 
+  border-radius: 50%;
+  float: left; 
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+
+.container {
+     
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows:    auto auto auto auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Header Header Header Header Header Header"
+      "Left Right Right Right Right Right"
+      "Left Right Right Right Right Right"
+      "Left Right Right Right Right Right"
+      "Left Right Right Right Right Right"
+      "Left Right Right Right Right Right"
+      "Left Right Right Right Right Right";
+  }
+  
+  .Header {
+    grid-area: Header;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-radius: 25px;
+    background: linear-gradient(to right,yellow,#f9a01b, orange, red );
+    height: 100px;
+    width: auto;
+   
+     
+     }
+  
+  .Left { 
+    grid-area: Left; 
+    
+    align-items: center;
+    
+    
+     }
+  
+  .Right { 
+    grid-area: Right;
+     }
+  hr{
+    border-width: 2px;
+        
+    border-image: linear-gradient(to right,yellow,#f9a01b, orange, red)1;
+       
+    
+  }
+     #l-text{
+       
+        text-align: center;
+     }
+     #r-text{ 
+        margin-left: 20px;
+       
+     }
+     #emoji{ 
+      
+        border: 2px solid white;
+        border-radius: 20px;
+        background-color: white;
+        padding: 5px 13px;
+        text-align: center;
+        font-size: 30px;
+        margin: 4px 2px;
+        cursor: pointer;
+        float: left;
+        margin-left: 2px;
+     }
+
+     
+     #attachment{ 
+      border: 2px solid white;
+      border-radius: 20px;
+      background-color: white;
+      padding: 5px 15px;
+      text-align: center;
+      font-size: 30px;
+      margin: 4px 2px;
+      cursor: pointer;
+      float: left;
+      margin-left: 2px;
+     } 
+     #location{
+      border: 2px solid white;
+      border-radius: 20px;
+      background-color: white;
+      padding: 5px 18px;
+      text-align: center;
+      font-size: 30px;
+      margin: 4px 2px;
+      cursor: pointer;
+      float: left;
+      margin-left: 2px;
+      
+     }
+     #p_btn{
+      border: 2px solid white;
+      border-radius: 20px;
+      background-color: white;
+      padding: 5px 10px;
+      text-align: center;
+      font-size: 30px;
+      margin: 4px 2px;
+      cursor: pointer;
+      float: left;
+      margin-left: 45px;
+     }
+     #save{ 
+        border-radius: 20px;
+        border: 2px solid white;
+        color: white;
+        background: linear-gradient(to right,yellow,#f9a01b, orange, red );
+        padding: 5px 20px;
+        text-align: center;
+        font-size: 30px;
+        margin: 4px 2px;
+        cursor: pointer;
+        float: right;
+        margin-right: 30px;
+        
+    }
+   
+    .dark-mode {
+      background-color: black;  
+      border-color: white;
+      color: white;
+
+    }
+    #div-trending{ 
+        text-align: center;
+    }
+
+    #post{
+      
+        resize: none; 
+        font-size: 35px;
+        width: 90%;
+        height:200px;
+        margin-left: 52.5px;
+        margin-top: 30px;
+        border-width: 5px;
+        border-style: double;
+        border-image: linear-gradient(to right,yellow,#f9a01b, orange, red ) 1;
+        border-radius: 20px;
+      
+        
+    }
+    
+      .button_div {
+        display: flex;
+        justify-content: space-around;
+      }
+      .modal-btn {
+        width: 4rem;
+        height: 2rem;
+      }
+      .switch input {
+        opacity: 10px;
+        width: 10px;
+        height: 10px;
+      }
+    
+      
+     /* The switch - the box around the slider */
+
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 34px;
+  
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+  border-color: black;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 50%;
+  border-color: black;
+}
+
+i.fa-moon-o {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input:checked + .slider {
+ 
+  border-width: 2px;
+  background:linear-gradient(to right,yellow,#f9a01b, orange, red );
+  border-color: linear-gradient(to right,yellow,#f9a01b, orange, red );
+}
+
+input:focus + .slider {
+  border-width: 5px;
+  box-shadow: 0 0 1px red;
+  border-color: linear-gradient(to right,yellow,#f9a01b, orange, red );
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(36px);
+  -ms-transform: translateX(36px);
+  transform: translateX(36px);
+}

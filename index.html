@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+
+    
+</head>
+<body class="container">
+    <div class="Header"> <!-- head -->
+        
+        <img id="pic" src="as.jpeg" >
+    <div style="display: block;">
+        <h3>Nereous Dacanay</h3>
+      <div id="name">
+        <h5>@NDacanay</h5>    
+      </div>
+       </div>
+    </div>
+
+    <div class="Left">
+        <div id="l-text">
+        <h1><i class="fa fa-hashtag"></i> Trending</h1>
+        <label class="switch">
+          <input type="checkbox" id="dark-mode">
+          <span class="slider"></span>
+          <i class="fa fa-moon-o"></i>
+        </label>
+        
+    </div>
+    </div>
+    <div class="Right">
+      <div class="tweet-wrap" >
+        <div class="text_area_div">
+             <!-- comment input and submit -->
+             <textarea name="post" id="post" placeholder=" What's on your mind? " maxlength="100"></textarea><br><br>
+             <button type="button" onclick="submit()" id="save"><i class="fa fa-envelope" aria-hidden="true"></i></button>
+             <button id="p_btn"><i class="fa fa-picture-o" aria-hidden="true"></i></button>
+             <button id="location"><i class="fa fa-map-marker" aria-hidden="true"></i></button>
+             <button id="attachment"><i class="fa fa-paperclip" aria-hidden="true"></i></button>
+             <button id="emoji"><i class="fa fa-smile-o" aria-hidden="true"></i></button>
+
+             
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <div id="items">
+          <div id="tweet">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    </body>
+    <dialog class="p_modal" id="dialog">
+      <div>
+        <input type="text" name="post_update" id="post_update" />
+        <input type="hidden" id="index"/>
+      </div>
+    <div class="interact">
+      <button onclick="edit()">save</button>
+      <button class="modal-btn">close</button>
+    </div>
+
+    </dialog>
+   
+ <script src="a.js"></script>
+ 
+
+
+ 
+ 
+</html>
